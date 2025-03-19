@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: #1F2D38;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: #9db6d4;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #0f354c;
+    border-radius: 5px;
+}
+header {
+    width: 100%;
+    height: 9vh;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5vh;
+}
+
+header>img {
+    height: 10vh;
+    margin-left: 2vw;
+}
+
+header>.navBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-right: 1.4vw;
+}
+
+header>.navBar>li {
+    margin: 0vw 2.5vw 0vw 0vw;
+    font-size: 3vh;
+    color: white;
+    cursor: pointer;
+}
+header>.navBar>li>a{
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+header>.navBar>button {
+    margin: 0vw 1.2vw 0vw 0vw;
+    padding: 8px 14px 8px 14px;
+    border: 1px solid #9db6d4;
+    border-radius: 10px;
+    font-size: 2.5vh;
+    color: white;
+    text-align: center;
+    background-color: #9db6d4;
+    cursor: pointer;
+}
+header>.navBar>button a {
+   color: white;
+   text-decoration: none;
+   background-color: transparent;
+}
+
+#menu {
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    margin: 1.6vh 1vh 0vh 0vh;
+    display: none;
+
+}
+#btn{
+    display: none;
+}
+/* nav bar end  */
+main{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image-box-logo{
+    /* background-image: url();
+    background-color: #ffffff; */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:center;
+    width: 245px;
+    height: 40px;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    /* border: 2px solid #ffffff; */
+}
+
+.image-box{
+    background-image: url("images/Code-D_Academy.jpg");
+    background-size: cover;
+    background-position:center;
+    width: 180px;
+    height: 180px;
+    /* border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; */
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    margin-top: 4vh;
+    margin-bottom: 2vh;
+    border: 4px solid rgb(215, 210, 210);
+}
+main p {
+    font-size: 0.9rem;
+    color: rgb(195, 192, 192);
+    text-align: center;
+    margin-top: 1.5vh;
+}
+main h1 {
+    font-size: 2rem;
+    color: white;
+    text-shadow:  2px 2px 2px #1F2D38;
+    text-align: center;
+}
+.des{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.description{
+    width: 80%;
+    color: rgb(226, 216, 216);
+    text-shadow: 1px 1px 1px #1F2D38;
+    margin-top: 0.5vh;
+}
+
+/* my skills section  */
+
+.skillsSection{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.allSkills{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.allSkills h2{
+  color: white;
+  margin-bottom: 4vh;
+}
+.allSkills p{
+    color: aliceblue;
+    font-size: 0.8rem;
+    text-align: center;
+}
+.allSkills span{
+    color: white;
+}
+.details:not(last-child){
+    margin: 2vh;
+}
+.details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.bar{
+    width: 100%;
+    border: 2px solid #d6beb2;
+    border-radius: 6px;
+}
+.bar div{
+    background-color: #9db6d4;
+    width: 0;
+    height: 4vh;
+    border-radius: 5px;
+    border: 2px solid #9db6d4;
+
+
+}
+
+#html{
+    animation: html 0.2s forwards;
+}
+@keyframes html{
+    100%{
+        width: 90%;
+    }
+}
+#java{
+    animation: java 0.3s forwards;
+}
+@keyframes java{
+    100%{
+      width: 90%;
+}
+}
+#cs{
+    animation: cs 0.3s forwards;
+}
+@keyframes cs{
+    100%{
+      width: 90%;
+}
+}
+#react{
+    animation: react 0.4s forwards;
+}
+@keyframes react{
+    100%{
+      width: 20%;
+}
+}
+/* project section  */
+.projectSection{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.projectSection h2{
+    color: white;
+}
+.procards{
+    width: 80%;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.procard{
+    width: 30%;
+    height: 65%;
+    box-shadow: 0px 0px 10px #d6beb2;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 5vh;
+}
+.procard .img img{
+    width: 100px;
+    height: 100px;
+    border-radius: 20%;
+}
+.procard h3{
+    color: white;
+}
+.procard p{
+    margin-top: 4%;
+    color: white;
+    font-size: 0.7rem;
+}
+.procard button{
+    margin-top: 6%;
+    width: 90%;
+    height: 5vh;
+    background-color: #9db6d4;
+    color: white;
+    outline: none;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #9db6d4;
+    cursor: pointer;
+}
+.procard button a {
+    text-decoration: none;
+    color: white;
+    background-color: #9db6d4;
+}
+.footer ,.footer-content, .social-links , .social-links a{
+    background-color: #9db6d4;
+}
+  .footer {
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #9db6d4;
+  }
+
+  
+  .footer-content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .footer-content p{
+      margin-top: 3vh;
+      font-size: 0.8rem;
+  }
+  .social-links {
+    margin-top: 10px;
+  }
+  .social-links a{
+      text-decoration: none;
+      color: white;
+      font-size: 0.9rem;
+  }
+  .social-link {
+    margin-right: 10px;
+  }
+  
+@media screen and (max-width: 768px) {
+    header{
+        display: flex;
+        align-items: center;
+    }
+    header>img {
+        height: 8vh;
+    }
+    header>.navBar {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        top: 10%;
+        /* right: 2%; */
+        margin: 3% 0 0 2%;
+        width: 96%;
+        padding: 10px;
+        background-color: #1F2D38;
+        border-radius: 10px;
+        display: none;
+        border: 1px solid rgb(161, 241, 255);
+    }
+
+    header>.navBar>li {
+        text-align: center;
+        padding: 10px;
+        margin-bottom: 1vh;
+        border-radius: 5px;
+    }
+
+    header>.navBar>li:hover {
+        background-color: #9db6d4;
+        cursor: pointer;
+    }
+
+    .navBar button {
+        width: 98%;
+    }
+
+    header .hide {
+        display: block;
+    }
+    #btn{
+        display: block;
+        color: white;
+        font-size: 1.5em;
+        margin-right: 2vw;
+        cursor: pointer;
+    }
+    .image-box{
+        width: 200px;
+        height: 200px;
+    }
+    main p {
+        font-size: 1rem;
+    }
+    main h1 {
+        font-size: 2.3rem;
+    }
+    .procards{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        overflow: auto;
+        scroll-snap-type: y mandatory;
+        padding: 10px;
+        gap: 20px;
+    }
+
+    .procard{
+        width: 80%;
+        height: 50vh;
+        scroll-snap-align: center;
+    }
+  
+}
+@media screen and (max-width: 400px) {
+    header>img {
+        height: 7vh;
+    }
+    .image-box{
+        width: 180px;
+        height: 180px;
+    }
+    main p {
+        font-size: 0.7rem;
+    }
+    main h1 {
+        font-size: 2.3rem;
+    }
+    #btn{
+        margin-right: 1rem;
+    }
+}
+@media screen and (max-width: 320px) {
+    header>img {
+        height: 6vh;
+    }
+    .image-box{
+        width: 170px;
+        height: 170px;
+    }
+    main p {
+        font-size: 0.8rem;
+    }
+    main h1 {
+        font-size: 2.1rem;
+    }
+}
